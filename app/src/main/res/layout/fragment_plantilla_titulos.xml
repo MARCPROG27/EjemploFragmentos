@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".PlantillaTitulosFragment">
+
+    <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="371dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Bienvenido, Ingresa tu nombre para comenzar!"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:textAlignment="center" android:background="#03A9F4"
+            android:textStyle="bold" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:id="@+id/etPerson"
+            android:layout_width="299dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="nombre"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabel" android:textStyle="bold" android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.35" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.128"/>
+    <Button
+            android:id="@+id/button"
+            android:layout_width="151dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="INGRESAR"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPerson" app:layout_constraintVertical_bias="0.489"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
